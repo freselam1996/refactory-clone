@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    font-family: sans-serif; 
+    padding: 0;
+    color: #333; 
+}
+
+/* --- Start Header and Navigation Layout --- */
+.header-container {
+    height: 80px; 
+    border: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    height: 100%;
+}
+
+.logo-dynamic img {
+    display: block;
+    width: 150px;
+    height: 50px;
+}
+
+.navbar > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    height: 100%;
+    flex-grow: 1; 
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    font-size: 16px; 
+    font-weight: 500; 
+}
+
+.navbar ul li {
+    margin-right: 25px; 
+    position: relative;
+    display: flex; 
+    align-items: center;
+}
+
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; 
+    transition: color 0.15s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar ul li a:hover {
+    color: #38BFC3;
+}
+
+.navbar ul li a span {
+    margin-left: 4px;
+    font-size: 0.75em;
+    line-height: 1;
+}
+
+.search-button {
+       margin-left: 30px; 
+    width: 55px; 
+    height: 55px; 
+    background-color: #7fa514; 
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex-shrink: 0; 
+    padding: 0;
+}
+
+.search-button:hover {
+    background-color: #0F5395; 
+}
+
+.search-button i {
+    font-size: 20px; 
+    color: #fff;
+}
+/* --- Ends Header and Navigation Layout --- */
