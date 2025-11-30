@@ -1,64 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link 
-      rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    />
     <link rel="stylesheet" href="./CSS/refactory.css" />
-    <link
-      rel="icon"
-      href="https://refactory.academy/wp-content/uploads/2025/09/cropped-Refactory_Favicon-32x32.png"
-      sizes="32x32"
-    />
-    <title>Refactory - Skilling Africa Tech Talent</title>
-  </head>
-  <body>
-   
-    <header>
-       <!-- navigation -->
-      <nav>
-        <div class="logo-dynamic">
-          <img
-            src="https://refactory.academy/wp-content/uploads/2025/07/Refactory-Logo.png" alt="Refactory"
-          />
+    <title>Navbar with Dropdown</title>
+</head>
+
+<body>
+   <!--this is navbar-->
+    <nav class="navbar">
+        <div class="brand">
+            <img src="https://refactory.academy/wp-content/uploads/2025/07/Refactory-Logo.png" alt="Refactory" walt="Brand-Logo">
+            
         </div>
-        <div>
-          <ul>
-            <li>
-              <a href="#">About Us <span>&#x25BE;</span></a>
-            </li>
-            <li>
-              <a href="#">Courses <span>&#x25BE;</span></a>
-            </li>
-            <li>
-              <a href="#">Financial Aid <span>&#x25BE;</span></a>
-            </li>
-            <li>
-              <a href="#">Tech Talent <span>&#x25BE;</span></a>
-            </li>
-            <li>
-              <a href="#">Partnerships</a>
-            </li>
-            <li>
-              <a href="#">Stories</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">FAQs</a>
-            </li>
-          </ul>
-          <button aria-label="Search">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </nav>
-    </header>
-    
+
+        <ul class="nav-links">
+            <li><a href="#">About Us ▾</a></li>
+            <li><a href="#">Courses ▾</a></li>
+            <li><a href="#">Financial Aid ▾</a></li>
+            <li><a href="#">Tech Talent </a></li> 
+            <li><a href="#">Partnerships </a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+
+        <form class="search-bar">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
 
     <!-- Hero Section-->
     <section class="hero-section">
@@ -74,6 +46,13 @@
         alt="Tech Training Hero"
       />
     </section>
+
     
-  </body>
+
+
+
+            
+        
+</body>
+
 </html>

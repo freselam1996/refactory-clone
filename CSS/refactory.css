@@ -1,97 +1,79 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    color: #333;
 }
 
-/* --- Header and Navigation --- */
-header {
-    height: 80px;
-    width: 100%;
+body {
+    font-family: Arial, sans-serif;
 }
 
-nav {
+/* Navbar container */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 100%;
+    background: #ffffff;
+    
+    color: #ffffff;
+     height: 100px;   
+    padding: 0 40px;
+    display: flex;
+    
 }
 
-.logo-dynamic img {
-    display: block;
-    width: 150px;
-    height: 50px;
-}
-
-nav > div:last-child {
+/* Brand logo and name */
+.brand {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 100%;
+    font-size: small;
+    
 }
 
-nav ul {
+
+    
+
+.brand img {
+    max-height: 70%;  
+    height: 70px;     
+    width: auto;
+    object-fit: contain;       
+    filter: drop-shadow(4px 4px 6px rgba(183, 183, 183, 0.6))
+            drop-shadow(-2px -2px 4px rgba(13, 13, 13, 0.3));
+    transform: perspective(500px) rotateX(5deg);
+
+}
+
+/* Nav links */
+.nav-links {
     display: flex;
-    align-items: center;
     list-style: none;
-    font-size: 16px;
-    font-weight: 500;
 }
 
-nav ul li {
-    margin-right: 25px;
+.nav-links li {
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
-nav ul li a {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+.nav-links a {
+    padding: 10px 15px;
     text-decoration: none;
-    color: inherit;
-    transition: color 0.15s ease-in-out;
+    color: #000000;
+    font-size: 16px;
 }
 
-nav ul li a span {
-    margin-left: 4px;
-    font-size: 0.75em;
-    line-height: 1;
+.nav-links a:hover {
+    background: #2e7be8;
+    border-radius: 5px;
 }
 
-nav ul li a:hover {
-    color: #38BFC3;
-}
+/*--serach -bar*/
 
-button[aria-label="Search"] {
-    margin-left: 30px;
-    width: 55px;
-    height: 55px;
-    background-color: #7fa514;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.search-bar button {
     border: none;
+    background: greenyellow;
+    border-radius: 100px;
     cursor: pointer;
-    transition: background-color 0.2s;
-    padding: 0;
-}
-
-button[aria-label="Search"]:hover {
-    background-color: #0F5395;
-}
-
-button[aria-label="Search"] i {
-    font-size: 20px;
-    color: #fff;
+    font-size: 18px;
 }
 
 /* --- Hero Section --- */
@@ -109,19 +91,20 @@ button[aria-label="Search"] i {
 .hero-content {
     text-align: center;
     max-width: 800px;
-    z-index: 2;
+    z-index: 40;
     padding: 0 20px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .hero-content p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 30px;
 }
@@ -152,3 +135,13 @@ button[aria-label="Search"] i {
     object-fit: contain;
     z-index: 1;
 }
+
+
+/**/
+
+
+
+
+
+
+
